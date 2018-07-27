@@ -402,7 +402,7 @@ class EasyLogFormatter implements FormatterInterface
         return $array;
     }
 
-    private function formatThrowable(Throwable $throwable)
+    private function formatThrowable(\Throwable $throwable)
     {
         return [
             'class' => get_class($throwable),
